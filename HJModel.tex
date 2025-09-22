@@ -53,7 +53,48 @@ tes
 
 %%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
+\label{sec:intro}
+
+% Most study in high jump has been emprical
+While there
 
 The rest of this paper is organized as follow:
+In Section \ref{sec:method}, we describe the tools we use to construct the high jump models and the assumptions going into the models.
+In Section \ref{sec:results}, we show the experiment results.
+In Section \ref{sec:discussion}, we discuss the implications of our results and future directions.
+
+\section{Method}
+\label{sec:method}
+
+\subsection{Mujoco}
+
+% Describe Mujoco and model
+
+% We choose two simpler model for interpretable results.
+While it is possible to integrate a full musculoskeletal model in Mujoco, the complexity of such a model makes it difficult to interpret the results.
+
+We construct two simple models to understand the zeroth order and first order effects in high jump instead. The first model is a rigid stick model, which is a simple model of a rigid rod entering at an angle with a certain velocity. This model gives us insight on how the basic kinematics variable such as incident angle, lean angle, and initial velocity affect the resulting height. The second model is a multi-segment model aims to represent an oversimplified version of the human body. 
+
+\subsection{Rigid stick model}
+
+% Define the model and its parameters
+
+\subsection{Multi-segment model}
+
+% Define the model and its parameters
+
+\section{Results}
+\label{sec:results}
+
+\subsection{Rigid stick model}
+
+\subsection{Multi-segment model force}
+
+\subsection{Kinematic chain activation}
+
+\section{Discussion}
+\label{sec:discussion}
+
+
 %%%%%%%%%%%%%%%%%%%%%%
 \end{document}
