@@ -1,21 +1,10 @@
-\documentclass[floats,floatfix,showpacs,amssymb,prd,twocolumn,superscriptaddress,nofootinbib]{revtex4-1}
-
-\usepackage{amssymb,amsmath,verbatim,mathtools,needspace,enumitem,etoolbox,graphicx,physics,microtype,afterpage,bm}
-
-\usepackage[dvipsnames, usenames]{xcolor}
-
-\definecolor{linkcolor}{rgb}{0.0,0.3,0.5}
-\usepackage[unicode, colorlinks=true, linkcolor=linkcolor, citecolor=linkcolor, filecolor=linkcolor,urlcolor=linkcolor, pdfusetitle]{hyperref}
-\usepackage[all]{hypcap}
-\usepackage{appendix}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{tabularx}
-\usepackage{cleveref}
-\usepackage[normalem]{ulem}
-
-%\usepackage{ulem}
-\usepackage{float}
+% Define document class
+\documentclass[twocolumn]{aastex631}
+\usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+\usepackage{algorithmic}
+\usepackage{color}
+\usepackage{booktabs}
+\usepackage{xspace}
 \usepackage{orcidlink}
 
 \graphicspath{{./figure/}}
@@ -38,9 +27,9 @@ Street, Baltimore, MD 21218, USA}}
 \author{Kaze W. K. Wong \orcidlink{0000-0001-8432-7788}}
 \jhu
 %\email{kazewong@jhu.edu}
+% 
+
 \footnote{$^*$ Equal contribution}
-
-
 \date{\today}
 
 \begin{abstract}
@@ -48,28 +37,28 @@ We employ two simple computational models to understand the biomechanics of high
 We find xxx
 \end{abstract}
 
-\maketitle
 
 %\tableofcontents
-
 
 %%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 \label{sec:intro}
 
 % Most study in high jump has been emprical
-There have been many emprical studies based on clinical trials.
+There have been many empirical studies based on clinical trials \cite{WILSON20112207, MateosPadorno2021KinematicAO, }.
+
+\cite{Sado2021CurvedAI,Fujimori2024JointKD}
 
 The rest of this paper is organized as follow:
 In Section \ref{sec:method}, we describe the tools we use to construct the high jump models and the assumptions going into the models.
 In Section \ref{sec:results}, we show the experiment results.
 In Section \ref{sec:discussion}, we discuss the implications of our results and future directions.
 
-\section{Method}
+\section{Simulation models}
 \label{sec:method}
 
-\subsection{Mujoco}
 
+To simulate the target systems, we employ \textsc{Mujoco} \cite{todorov2012mujoco} as the underlying engine. 
 % Describe Mujoco and model
 
 % We choose two simpler model for interpretable results.
@@ -85,7 +74,7 @@ We construct two simple models to understand the zeroth order and first order ef
 
 % Define the model and its parameters
 
-\section{Results}
+\section{Experimental Results}
 \label{sec:results}
 
 \subsection{Rigid stick model}
@@ -101,6 +90,7 @@ We construct two simple models to understand the zeroth order and first order ef
 
 % Employ full body biomechanical model
 
+\bibliography{HJModel}
 
 %%%%%%%%%%%%%%%%%%%%%%
 \end{document}
