@@ -15,6 +15,7 @@ Street, Baltimore, MD 21218, USA}}
 \definecolor{rb4}{HTML}{27408B}
 
 \newcommand{\kw}[1]{{\color{rb4}[KW: #1 ]}}
+\newcommand{\fill}[1]{{\color{red}[FILL: #1 ]}}
 
 \begin{document}
 
@@ -74,9 +75,32 @@ We construct two simple models to understand the zeroth order and first order ef
 
 % Define the model and its parameters
 
+This basic models consists of two components: a rigid stick and a high jump pit. 
 
 We list the parameters of the rigid stick model in Table \ref{tab:stick_parameters}.
-\begin{table*}[hbt!]
+\begin{table}[hbt!]
+    \begin{center}
+    \begin{tabular}{ l l }
+    \hline
+    \hline
+    Parameter &  Description \\
+    \hline
+
+    $L$ & Length of the stick \\
+    
+    \hline
+    \hline
+    \end{tabular}
+    \caption{}
+    \label{tab:stick_parameters}
+    \end{center}
+\end{table}
+
+\subsection{Multi-segment model}
+
+% Define the model and its parameters
+The additional parameters of the multi-segment model are listed in Table \ref{tab:stick_parameters}.
+\begin{table}[hbt!]
     \begin{center}
     \begin{tabular}{ l l }
     \hline
@@ -89,20 +113,27 @@ We list the parameters of the rigid stick model in Table \ref{tab:stick_paramete
     \hline
     \end{tabular}
     \caption{}
-    \label{tab:stick_parameters}
+    \label{tab:ms_parameters}
     \end{center}
-\end{table*}
-
-\subsection{Multi-segment model}
-
-% Define the model and its parameters
+\end{table}
 
 \section{Experimental Results}
 \label{sec:results}
 
-\subsection{Rigid stick model}
+With the two models defined in Section \ref{sec:method}, we perform a series of three experiments to investigate key factors affecting the take off of high jump.
 
-\subsection{Multi-segment model force}
+\subsection{Optimal approach angles}
+
+The first experiment aims to find the correlation between the approach angle and the resulting height.
+A curved approach has been the standard technique in high jump from beginner to elite level. The curve approach offers a number of advantages over a straight line approach, such as creating angular momentum for rotation over the bar and reducing forces exterted onto joints \cite{Tan1997TheMO, Tan01012005, Sado2021CurvedAI}.
+However, the curve approach also introduces additional complexity to the jump, most noticeably the need to coordinate an inward lean with the approach angle.
+While there has been reports and studies on the angles used by professional athletes \cite{Nicholson2024DifferencesIR}
+% Describe the range of parameters
+
+\subsection{Force distribution in multi-segment model}
+
+The next experiment extends the first experiment to investigate the force demand on joints in the multi-segment model.
+
 
 \subsection{Kinematic chain activation}
 
